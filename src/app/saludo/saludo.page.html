@@ -9,3 +9,14 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-content [fullscreen]="true">
+  
+  <ion-item>
+    <ion-label position="floating">ingresa tu nombre para saludar </ion-label>
+    <ion-input [(ngModel)]="nombre"></ion-input>
+  </ion-item>
+
+  <ion-button color="tertiary" (click)="saludo()">
+    saludar
+  </ion-button>
+</ion-content>

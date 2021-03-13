@@ -7,7 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SaludoPage implements OnInit {
 
+  nombre=null
+
   constructor() { }
+
+  saludo(){
+    if (this.nombre !=null){
+      alert("hola "+ this.nombre)}
+    else{
+      alert("digita tu nombre")
+    }
+    }
+
 
   ngOnInit() {
   }
