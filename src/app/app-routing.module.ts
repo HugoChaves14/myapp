@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'operaciones',
     loadChildren: () => import('./operaciones/operaciones.module').then( m => m.OperacionesPageModule)
   },
+  {
+    path: 'parcial1',
+    loadChildren: () => import('./parcial1/parcial1.module').then( m => m.Parcial1PageModule)
+  },
 ];
 
 @NgModule({
